@@ -1,0 +1,518 @@
+body{
+    margin: 0;
+    font-family: Times New Roman;
+}
+
+/* Navigation bar */
+
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: black;
+    opacity: 0.8;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav ul{
+  display:flex;
+}
+#nav ul li{
+    list-style: none;
+}
+#nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+#nav ul li a:hover{
+    background: white;
+    color: black;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+
+#nav h4{
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    font-family: sofia;
+    animation: brand-name 4s 0s infinite linear;
+}
+@keyframes brand-name{
+  0%{
+    background: rgb(225, 225, 23);
+  }
+  25%{
+    background: rgb(193, 81, 100);
+  }
+  50%{
+    background: rgb(74, 244, 249);
+  }
+  75%{
+    background: rgb(29, 255, 100);
+  }
+  100%{
+    background: rgb(255, 225,23);
+  }
+}
+
+/* Home Sectiion */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding: 20px;
+}
+#home::before{
+    content: "";
+    background: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500') no-repeat center center/cover;
+    filter: blur(8px);
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+#home .home-content{
+    text-align: center;
+    margin: 20px;
+    color: black;
+    font-size: 1.5rem;
+    font-family: "Instrument Serif";
+}
+#buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "BBH Sans Bogle";
+}
+#home .btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px rgb(59, 57, 57);
+}
+#home .btn:hover{
+    color: white;
+    background-color: black;
+    transition: all ease  0.8s;
+}
+
+/*About Sectiion*/
+
+#about{
+  width: 100%;
+  padding-top: 70px;
+}
+h1{
+  text-align: center;
+  font-family: Times New Roman;
+}
+#about .btn{
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 15px;
+  color: rgb(190, 140, 13);
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  font-family: "BBH Sans Bogle";
+}
+#about .btn:hover{
+  border: 1px solid black;
+  background: goldenrod;
+  color: black;
+}
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  background: rgb(228, 222, 222);
+  border-radius: 15px;
+}
+
+.restau-img img{
+  border-radius: 15px;
+  width: 600px;
+}
+.restau-content{
+  padding: 12px;
+  font-size: 18px;
+  text-align: justify;
+  font-family: "Instrument Serif";
+}
+
+
+/* chef singnature Sectiion */
+
+#menu{
+  width: 100%;
+  padding-top: 66px;
+}
+
+.chef-singnature{
+  padding: 5px;
+  margin: 20px;
+  background: rgb(228, 222, 222);
+  border-radius: 15px;
+}
+
+#chef-dish-image{
+  display: flex;
+  flex-direction: row;
+}
+.chef-dish-image{
+  display: inline-block;
+  background: white;
+  margin-top: 5px;
+  margin: 10px;
+  border-radius: 15px;
+  width: 33.33%;
+  overflow: hidden;
+}
+.chef-dish-image img{
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  height: 240px;
+}
+.chef-dish-image img:hover{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px rgb(195, 0, 255);
+  transition: all ease 1s;
+}
+
+.chef-dish-content{
+  padding-left: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Instrument Serif";
+}
+
+/* image gellery Sectiion*/
+
+  #gellery{
+  width: 100%;
+  padding-top: 66px;
+}
+ 
+ .gellery{
+  padding: 5px;
+  margin: 20px;
+  background: rgb(228, 222, 222);
+  border-radius: 15px;
+}
+
+.image-gellery{
+  margin: 2px 5px;
+  padding: 0;
+  width: 32%;
+  border-radius: 12px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.image-gellery img{
+  width: 100%;
+  height: auto;
+}
+.image-gellery img:hover{
+  transform: scale(1.2);
+  transition: all ease 1s;
+}
+
+.image-gellery:hover{
+  box-shadow: 1px 1px 20px blue;
+}
+.image-content{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  right: 10%;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: opacity ease 1.5s ;
+}
+.image-gellery:hover .image-content{
+  opacity: 1;
+}
+/* Guest Impression */
+
+#guest-impression{
+  display: flex;
+  flex-direction: row;
+}
+
+#guest-impression .content{
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+  background: white;
+  border-radius: 12px;
+  width: 33.33%;
+  text-align: center;
+  font-family: "Instrument Serif";
+}
+
+/*  Order Sectiion  */
+
+#order{
+  background: rgb(245,245,245);
+  height: auto;
+  padding: 20px;
+  width: 97%;
+  padding-top: 90px;
+}
+
+
+ .order{
+  padding: 20px;
+  margin: 2px;
+  width: 97%;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+form{
+  z-index: 2;
+  margin-top: 10px;
+}
+.myform-order, .myform-resurve{
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 12px;
+  color: black;
+  padding: 15px;
+  position: relative;
+  border: 3px solid black;
+  font-family: "Instrument Serif";
+}
+.myform-order::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('https://cdn.pixabay.com/photo/2023/08/02/18/21/monstera-8165765_640.jpg')no-repeat center center/cover;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  z-index: -1;
+}
+.myform-resurve::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('https://cdn.pixabay.com/photo/2012/11/29/02/32/flowers-67839_640.jpg')no-repeat center center/cover;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.form{
+  color: black;
+  width: 97%;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 5px;
+  margin: 15px;
+  background: transparent;
+  font-family: "Instrument Serif";
+}
+input::placeholder, textarea::placeholder{
+  color: black;
+  opacity: 0.8;
+}
+option{
+  color: black;
+}
+.option{
+  width: 10%;
+}
+
+#order a{
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+
+#order .submit-btn1{
+  padding: 5px;
+  text-align: right;
+  border: 2px solid rgb(59, 0, 59);
+  border-radius: 10px;
+  background: rgba(127, 57, 58, 0.2);
+  color: rgb(59, 0, 59);
+  font-size: 1.5rem;
+  font-family: "BBH Sans Bogle";
+}
+#order .submit-btn2{
+  padding: 5px;
+  text-align: right;
+  border: 2px solid rgb(163, 148, 0);
+  border-radius: 10px;
+  background: rgba(231, 214, 38, 0.2);
+  color: rgb(163, 148, 0);
+  font-size: 1.5rem;
+  font-family: "BBH Sans Bogle";
+}
+#order .submit-btn1:hover, .submit-btn2:hover{
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  cursor: pointer;
+}
+
+/* contact section */
+
+#direction{
+  padding-top: 60px;
+}
+#direction .direction{
+  text-align: center;
+}
+.direction h2{
+  margin-bottom: 0;
+}
+.direction p{
+  margin-top: 0;
+}
+
+#direction .map{
+  border: 4px solid rgb(120,199,255);
+  border-radius: 12px;
+  width: 80%;
+  height: 350px;
+}
+
+/* contact section */
+#contact{
+  height: auto;
+  padding: 20px;
+}
+#contact #content{
+  display: flex;
+  flex-direction: row;
+}
+
+.content{
+  width: 33.333%;
+  margin: 20px;
+  font-family: "Instrument Serif";
+}
+
+#contact h2{
+  font-size: 2.5rem;
+}
+#contact p{
+  font-size: 1.5rem;
+}
+
+.quick-links{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: blue;
+  margin-top: 10px;
+}
+.quick-links:hover{
+  text-decoration: underline;
+}
+
+.quick-contact{
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 60px;
+  border-radius: 50%;
+}
+.quick-contact:hover{
+  background: rgba(113, 112, 112, 0.2);
+  color: white;
+  transition: all ease 0.6s;
+}
+
+#contact .content .instagram{
+  background: -webkit-linear-gradient(red, rgb(231, 218, 70));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#contact .content .facebook{
+  color: blue;
+}
+#contact .content .whatsapp{
+  color: green;
+}
+
+
+/* foooter section */
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: darkmagenta;
+  color: white;
+}
+
+/* utility classes*/
+.rights{
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-family: "Instrument Serif";
+  font-weight: bold;
+}
+
+/* designing */
+
+@keyframes truck-effect{
+  0%{
+    left: -80px;
+  }
+  100%{
+    left: 120%;
+  }
+}
+
+.truck{
+  position: fixed;
+  bottom: 16px;
+  left: -80px;
+  animation: truck-effect 8s infinite linear;
+  z-index: 6;
+}
+.truck:hover{
+  animation-play-state: paused;
+}
+.truck img{
+  width:80px;
+}

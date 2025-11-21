@@ -1,0 +1,223 @@
+/* Navigation bar */
+
+#nav{
+    flex-direction: column;
+}
+
+#nav ul{
+  display: flex;
+}
+#nav ul li{
+    font-size: 0.8rem;
+}
+#nav ul li a{
+    padding: 5px;
+}
+
+
+.nav_content1{
+    font-size: 0.8rem;
+    margin: 2px;
+}
+
+/* Home Sectiion */
+
+#home{
+    flex-direction: column;
+    height: 600px;
+  
+}
+#home::before{
+    filter: blur(6px);
+    height: 600px
+}
+
+
+
+#home .home-content{
+    margin: 0px;
+    font-size: 0.8rem;
+}
+#home .btn{
+    padding: 5px;
+    margin: 3px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+/*About Sectiion*/
+
+h1{
+  font-size: 1.2rem;
+}
+#about .btn{
+  padding: 1px;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.restau-content{
+  font-size: 0.9rem;
+}
+.restau-img img{
+  width: 100%;
+}
+
+
+/* chef singnature Sectiion */
+
+.chef-singnature{
+  padding: 10px;
+  margin: 10px;
+}
+
+#chef-dish-image{
+  display: flex;
+  flex-direction: column;
+}
+.chef-dish-image{
+  margin-top: 10px;
+  margin: 0px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.chef-dish-image img{
+  width: 100%;
+}
+
+.chef-dish-content{
+  font-size: 1rem;
+}
+
+/* image gellery Sectiion*/
+ 
+ .gellery{
+  padding: 10px;
+  margin: 10px;
+}
+
+.image-gellery{
+  margin: 0px;
+  margin-bottom: 10px;
+  width: 98%;
+  height: 250px;
+}
+.image-gellery img{
+  height: 250px;
+}
+  
+
+/* Guest Impression */
+
+#guest-impression{
+  display: flex;
+  flex-direction: column;
+}
+
+#guest-impression .content{
+  margin: 5px 0px;
+  padding: 2px;
+  width: 100%;
+}
+
+/*  Order/Resurve Sectiion  */
+
+#order{
+  width: 99%;
+  padding: 2px;
+}
+
+ .order{
+  padding: 10px;
+  margin: 2px;
+  width: 94%;
+  border-radius: 10px;
+}
+
+.myform-order, .myform-resurve{
+  font-size: 1rem;
+}
+
+.form{
+  width: 90%;
+}
+
+.option{
+  width: 25%;
+}
+
+#order .submit-btn1{
+  font-size: 1rem;
+}
+#order .submit-btn2{
+  font-size: 1rem;
+}
+
+
+/* contact section */
+#contact{
+  padding: 10px;
+}
+#contact #content{
+  flex-direction: column;
+}
+
+.content{
+  width: 100%;
+  margin: 5px;
+}
+
+#contact h2{
+  font-size: 1rem;
+}
+#contact p{
+  font-size: 0.8rem;
+}
+
+.quick-links{
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.quick-contact{
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+/* foooter section */
+
+#footer{
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.7rem;
+}
+
+/* utility classes*/
+.rights{
+  padding-left: 1px;
+  margin-bottom: 28px;
+}
+
+h3{
+  font-size: 0.8rem;
+}
+
+h2{
+  font-size: 1rem;
+}
+  
+/* designing */
+
+.truck{
+  bottom: 28px;
+}
+
+.truck img{
+  width:60px;
+}
